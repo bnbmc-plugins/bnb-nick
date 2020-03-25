@@ -1,0 +1,15 @@
+name: bnB-nick
+main: net.bnbdiscord.bnbnick.BnBNickPlugin
+version: ${project.version}
+author: Akribes
+api-version: 1.15
+description: Allows players to use nicknames instead of their actual player names
+commands:
+  nick:
+    aliases:
+      - setnick
+    description: Set your nickname
+    usage: /<command> <nickname>
+  whois:
+    description: Let's see who this really is
+    usage: /<command> <nickname | player name>
