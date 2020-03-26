@@ -45,7 +45,7 @@ public class NicknameDatabase {
         s.setString(1, uuid);
         ResultSet res = s.executeQuery();
         if (!res.next()) return null;
-        return res.getString("nicknames");
+        return res.getString("nickname");
     }
 
     /**
@@ -126,7 +126,7 @@ public class NicknameDatabase {
         plugin.getLogger().info("Connection to the database closed");
     }
 
-    public class NameLookupResult {
+    public static class NameLookupResult {
         public final String uuid;
         public final String nickname;
 

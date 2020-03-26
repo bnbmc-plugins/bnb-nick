@@ -39,6 +39,7 @@ public class BnBNickPlugin extends JavaPlugin {
         getCommand("whois").setExecutor(new WhoisCommandExecutor(this));
 
         // Register listeners
+        getServer().getPluginManager().registerEvents(new BnBNickEventListener(this), this);
     }
 
     @Override
