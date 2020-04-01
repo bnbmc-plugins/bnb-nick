@@ -26,7 +26,7 @@ public class NickCommandExecutor implements CommandExecutor {
         if (args.length == 0) {
             if(plugin.getDatabase().unsetNickname(((Player) sender).getUniqueId().toString())) {
                 Utils.applyNickname((Player) sender, null);
-                Utils.sendMessage(sender, "SUCCESS", "Your privacy has been deleted.", ChatColor.GREEN);
+                Utils.sendMessage(sender, "SUCCESS", "Your nickname has been removed.", ChatColor.GREEN);
             } else {
                 Utils.sendMessage(sender, "FAIL", "Nothing has changed, did you even have a nickname?", ChatColor.RED);
             }
