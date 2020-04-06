@@ -13,3 +13,11 @@ commands:
   whois:
     description: Let's see who this really is
     usage: /<command> <nickname | player name>
+  forcenick:
+    description: Force a nickname upon a player
+    usage: /<command> <target> <nickname>
+    permission: bnb-nick.forcenick
+permissions:
+  bnb-nick.forcenick:
+    description: Allows use of /forcenick
+    default: op

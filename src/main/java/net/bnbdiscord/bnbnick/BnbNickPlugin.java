@@ -1,5 +1,6 @@
 package net.bnbdiscord.bnbnick;
 
+import net.bnbdiscord.bnbnick.commands.ForcenickCommandExecutor;
 import net.bnbdiscord.bnbnick.commands.NickCommandExecutor;
 import net.bnbdiscord.bnbnick.commands.WhoisCommandExecutor;
 import org.bukkit.Bukkit;
@@ -36,6 +37,7 @@ public class BnbNickPlugin extends JavaPlugin {
 
         // Set command handlers
         getCommand("nick").setExecutor(new NickCommandExecutor(this));
+        getCommand("forcenick").setExecutor(new ForcenickCommandExecutor(this));
         getCommand("whois").setExecutor(new WhoisCommandExecutor(this));
 
         // Register listeners
