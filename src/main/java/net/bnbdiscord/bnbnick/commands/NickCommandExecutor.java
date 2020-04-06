@@ -32,7 +32,7 @@ public class NickCommandExecutor implements CommandExecutor {
             }
         } else {
             String nickname = String.join(" ", args);
-            if (Bukkit.getPlayer(nickname) != null) {
+            if (Bukkit.getPlayerExact(nickname) != null) {
                 Utils.sendMessage(sender, "NOPE", "Someone else already has that name.", ChatColor.RED);
                 return true;
             }
