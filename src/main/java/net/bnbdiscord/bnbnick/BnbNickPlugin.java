@@ -9,10 +9,10 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class BnBNickPlugin extends JavaPlugin {
+public class BnbNickPlugin extends JavaPlugin {
     private NicknameDatabase database;
 
-    public BnBNickPlugin() {
+    public BnbNickPlugin() {
         database = new NicknameDatabase(this);
     }
 
@@ -39,7 +39,7 @@ public class BnBNickPlugin extends JavaPlugin {
         getCommand("whois").setExecutor(new WhoisCommandExecutor(this));
 
         // Register listeners
-        getServer().getPluginManager().registerEvents(new BnBNickEventListener(this), this);
+        getServer().getPluginManager().registerEvents(new BnbNickEventListener(this), this);
     }
 
     @Override

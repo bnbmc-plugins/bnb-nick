@@ -11,10 +11,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class NicknameDatabase {
-    private BnBNickPlugin plugin;
+    private BnbNickPlugin plugin;
     private Connection conn;
 
-    public NicknameDatabase(BnBNickPlugin plugin) {
+    public NicknameDatabase(BnbNickPlugin plugin) {
         this.plugin = plugin;
     }
 

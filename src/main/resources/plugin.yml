@@ -1,5 +1,5 @@
-name: bnB-nick
-main: net.bnbdiscord.bnbnick.BnBNickPlugin
+name: bnb-nick
+main: net.bnbdiscord.bnbnick.BnbNickPlugin
 version: ${project.version}
 author: Akribes
 api-version: 1.15

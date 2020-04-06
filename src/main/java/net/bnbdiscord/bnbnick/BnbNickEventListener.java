@@ -10,10 +10,10 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import java.sql.SQLException;
 import java.util.UUID;
 
-public class BnBNickEventListener implements Listener {
-    private BnBNickPlugin plugin;
+public class BnbNickEventListener implements Listener {
+    private BnbNickPlugin plugin;
 
-    public BnBNickEventListener(BnBNickPlugin plugin) {
+    public BnbNickEventListener(BnbNickPlugin plugin) {
         this.plugin = plugin;
     }
 

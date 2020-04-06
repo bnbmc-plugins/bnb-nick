@@ -1,6 +1,6 @@
 package net.bnbdiscord.bnbnick.commands;
 
-import net.bnbdiscord.bnbnick.BnBNickPlugin;
+import net.bnbdiscord.bnbnick.BnbNickPlugin;
 import net.bnbdiscord.bnbnick.NicknameDatabase;
 import net.bnbdiscord.bnbnick.Utils;
 import org.bukkit.Bukkit;
@@ -12,9 +12,9 @@ import org.bukkit.command.CommandSender;
 import java.util.UUID;
 
 public class WhoisCommandExecutor implements CommandExecutor {
-    private BnBNickPlugin plugin;
+    private BnbNickPlugin plugin;
 
-    public WhoisCommandExecutor(BnBNickPlugin plugin) {
+    public WhoisCommandExecutor(BnbNickPlugin plugin) {
         this.plugin = plugin;
     }
 
