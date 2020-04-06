@@ -30,7 +30,7 @@ public class ForcenickCommandExecutor implements CommandExecutor {
 
         if (args.length == 1) {
             if(plugin.getDatabase().unsetNickname(target.getUniqueId().toString())) {
-                Utils.applyNickname((Player) sender, null);
+                Utils.applyNickname((Player) target, null);
                 Utils.sendMessage(sender, "SUCCESS", "The nickname has been removed.", ChatColor.GREEN);
             } else {
                 Utils.sendMessage(sender, "NO CHANGES", "Nothing has changed, did that player even have a nickname?",
@@ -44,7 +44,7 @@ public class ForcenickCommandExecutor implements CommandExecutor {
             }
 
             if (plugin.getDatabase().setNickname(target.getUniqueId().toString(), nickname)) {
-                Utils.applyNickname((Player) sender, nickname);
+                Utils.applyNickname((Player) target, nickname);
                 Utils.sendMessage(sender, "DONE", "That player's nickname has been changed. (However, people" +
                         " can still see who you are using /whois!)", ChatColor.GREEN);
             } else {
